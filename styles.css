@@ -1,0 +1,421 @@
+/* styling ver alpha*/
+
+* {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "header"
+                "nav"
+                "article"
+                "content"
+                "footer";
+            gap: 20px;
+        }
+
+        .home-page {
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas: 
+                "header header"
+                "nav nav"
+                "article content"
+                "news news"
+                "footer footer";
+        }
+
+        header {
+            background-color: #cacaca;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            grid-area: header;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80px;
+        }
+
+        header h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .nav {
+            grid-area: nav;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 8px 20px;
+            margin: 0 5px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #3498db;
+            background-color: rgba(52, 152, 219, 0.1);
+        }
+
+        .nav a.active {
+            background-color: #006d31;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .article {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(26, 26, 26, 0.7)), url('Images/Cornfield.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            grid-area: article;
+            color: white;
+        }
+
+        .article h2 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .article p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .article a {
+            color: white;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .article a:hover {
+            color: #3498db;
+        }
+
+        .content {
+            background: #006d31;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            grid-area: content;
+        }
+
+        .content h2, h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .content h3 {
+            margin-top: 25px;
+        }
+
+        .content ul {
+            list-style-position: inside;
+            margin: 15px 0;
+        }
+
+        .content li {
+            margin: 8px 0;
+        }
+
+        .content a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .content a:hover {
+            color: #3498db;
+        }
+
+        .news {
+            background-color: #176624;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            grid-area: news;
+        }
+
+        .news h2, h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .news a {
+            color: white;
+            text-decoration: underline;
+        }
+        .news a:hover {
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+        .news h3 {
+            margin-top: 20px;
+        }
+
+        .news p {
+            color: white;
+            line-height: 1.7;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.3);
+            margin: 15px 0;
+        }
+
+        footer {
+            grid-area: footer;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        footer p {
+            color: #303030c0;
+            text-align: center;
+        }
+        .submit-button {
+            background-color: #1c7e2d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #2980b9;
+        }
+        .social-container {
+            background-color: #176624;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .social-container, a, h3, p
+         {
+            color: white;
+        }
+        .social-container a:hover {
+            color: #3498db;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        .business-container {
+            background-color: #006d31;
+            list-style-position: inside;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            grid-area: content;
+        }
+        .business-container img {
+            width: 100%;
+            height: 10px;
+            min-height: min-content;
+            border-radius: 8px;
+            margin: 15px 0;
+            display: block;
+        }
+        .contact-main-container {
+            background-color: #006d31;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        .contact-main-container form div {
+            margin-bottom: 15px;
+        }
+
+        .contact-main-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-main-container input, textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-main-container textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .about-container {
+            background: linear-gradient(rgba(8, 8, 8, 0.61), rgba(0, 0, 0, 0.8)), url('Images/Farmers.jpg');
+            background-size: cover;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        .about-container h2, h3 {
+            margin-bottom: 15px;
+        }
+
+        .about-container p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        .about-container a {
+            color: white;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        .about-container a:hover {
+            color: #3498db;
+        }
+        .tips-container {
+            background-color: #006d31;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        .tips-container article {
+            margin-bottom: 25px;
+        }
+
+        .tips-container h2, h3 {
+            margin-bottom: 15px;
+        }
+
+        .tips-container p {
+            line-height: 1.7;
+        }
+        .business-container {
+            background-color: #006d31;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        .business-card {
+            background-color: #004d24;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            cursor: pointer;
+            margin-top: 20px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .business-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        transition: 0.5s;
+        }
+
+        .business-card img {
+            border-radius: 8px;
+        }
+
+        .business-card h3, p {
+            margin: 5px 0;
+        }
+
+        .business-card ul {
+            list-style-position: inside;
+            padding: 0;
+            margin: 5px 0;
+            text-align: center;
+        }
+        .tips-container{
+            background: linear-gradient(rgba(8, 8, 8, 0.61), rgba(0, 0, 0, 0.8)), url('Images/Farmer`.jpg');
+            background-size: cover;
+            padding: 30px;
+            border-radius: 8px;
+            color: white;
+        }
+        .tips-container li {
+            margin-left: 20px;
+        }
+        @media only screen and (max-width: 768px) {
+            .main-container,
+            .home-page {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "article"
+                    "content"
+                    "news"
+                    "footer";
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .nav a {
+                padding: 6px 12px;
+                margin: 2px;
+            }
+
+            .article,
+            .content,
+            .news {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            .content ul {
+                margin: 10px 0;
+            }
+
+            .news h2, h3 {
+                font-size: 20px;
+            }
+            
+            .business-container img {
+                max-width: 100%;
+            }
+        }
