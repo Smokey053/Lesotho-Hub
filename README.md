@@ -10,6 +10,8 @@ Lecturer: Mr. Thokoana
 
 Assignment 1 - Lesotho Hub(HTML, CSS)
 
+Live link: https://smokey053.github.io/Lesotho-Hub/
+
 A web platform designed to help farmers in Lesotho advertise their products and connect with potential clients. 
 The website allows users to view different farming categories, browse businesses, see products with prices, and access useful farming tips.
 
