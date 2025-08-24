@@ -197,10 +197,12 @@ footer p {
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 .submit-button:hover {
     background-color: rgb(41, 128, 185);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .social-container {
@@ -396,6 +398,7 @@ footer p {
         object-fit: cover;
     }
 }
+
 
 
 
