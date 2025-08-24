@@ -13,7 +13,7 @@ Assignment 1 - Lesotho Hub(HTML, CSS)
 A web platform designed to help farmers in Lesotho advertise their products and connect with potential clients. 
 The website allows users to view different farming categories, browse businesses, see products with prices, and access useful farming tips.
 
-Home Page– Showcases farming categories, farming news and provides a short introduction.
+Home Page - Showcases farming categories, farming news and provides a short introduction.
 
 Business Page – Displays available products and their prices for each business.
 
